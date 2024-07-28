@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Business Analyst" />
+  <meta property="og:description"
+    content="Software Developer| Job Order Code: VS00783 | Start Date: 02/10/2024 18:30:00 | Work Location: Delhi, Delhi." />
+  <meta property="og:image"
+    content="https://t3.ftcdn.net/jpg/02/33/12/44/360_F_233124436_78mVMPy74gldjeo6rdyJgRklPIGSAwl7.jpg" />
+  <title>Share Link</title>
+  <style>
+    .content {
+      padding: 8px 90px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .content p {
+      line-height: 1.9;
+    }
+
+    .content img {
+      max-height: 500px;
+    }
+
+
+    .share-btn-container {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .share-btn-container a i {
+      font-size: 32px;
+    }
+
+    .share-btn-container a {
+      margin: 12px 0;
+      transition: 500ms;
+    }
+
+    .share-btn-container a:hover {
+      transform: scale(1.2);
+    }
+
+    .share-btn-container .fa-facebook {
+      color: #3b5998;
+    }
+
+    .share-btn-container .fa-twitter {
+      color: #1da1f2;
+    }
+
+    .share-btn-container .fa-linkedin {
+      color: #0077b5;
+    }
+
+    .share-btn-container .fa-pinterest {
+      color: #bd081c;
+    }
+
+    .share-btn-container .fa-whatsapp {
+      color: #25d366;
+    }
+
+    .share-btn-container .fa-instagram {
+      color: palevioletred;
+    }
+
+    /* Media Queries */
+
+    @media (max-width: 550px) {
+      .content {
+        padding: 8px 32px;
+      }
+
+      .share-btn-container {
+        transform: unset;
+        top: unset;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        flex-direction: row;
+        box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+        padding: 16px 0;
+        justify-content: center;
+      }
+
+      .share-btn-container a {
+        margin: 0 32px;
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+</head>
+
+<body>
+  <div class="share-btn-container">
+    <a href="#" class="facebook-btn">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="#" class="twitter-btn">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a href="#" class="pinterest-btn">
+      <i class="fab fa-pinterest"></i>
+    </a>
+
+    <a href="#" class="linkedin-btn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="#" class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="#" class="instagram-btn">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <div class="content">
+    <h1>WE ARE HIRING</h1>
+
+    <p>Hiring Details: We are looking for talented individuals to join our team. If you're passionate about technology
+      and innovation, apply now!</p>
+    <p class="c">Software Developer| Job Order Code: VS00783 | Start Date: 02/10/2024 18:30:00 | Work Location: Delhi,
+      Delhi.</p>
+
+    <img id="main-img" src="https://t3.ftcdn.net/jpg/02/33/12/44/360_F_233124436_78mVMPy74gldjeo6rdyJgRklPIGSAwl7.jpg"
+      alt="" />
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const facebookBtn = document.querySelector(".facebook-btn");
+      const twitterBtn = document.querySelector(".twitter-btn");
+      const pinterestBtn = document.querySelector(".pinterest-btn");
+      const linkedinBtn = document.querySelector(".linkedin-btn");
+      const whatsappBtn = document.querySelector(".whatsapp-btn");
+      const instagramBtn = document.querySelector(".instagram-btn");
+
+
+      function init() {
+        const mainImg = document.getElementById("main-img");
+
+        let postUrl = encodeURIComponent("https://e4sspl.ats24.pro/career/CareerDetails1/3c9aAdA783b8e");
+        let postTitle = encodeURIComponent("Business Analyst");
+        let postDescription = encodeURIComponent("Software Developer| Job Order Code: VS00783 | Start Date: 02/10/2024 18:30:00 | Work Location: Delhi, Delhi.");
+        let postImg = encodeURIComponent("https://t3.ftcdn.net/jpg/02/33/12/44/360_F_233124436_78mVMPy74gldjeo6rdyJgRklPIGSAwl7.jpg");
+
+
+        let facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${postUrl}`;
+        let linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${postUrl}&title=${postTitle}&summary=${postDescription}`;
+        let pinterestShareUrl = `https://pinterest.com/pin/create/bookmarklet/?media=${postImg}&url=${postUrl}&description=${postTitle}`;
+        let twitterShareUrl = `https://twitter.com/share?url=${postUrl}&text=${postTitle}`;
+        let whatsappShareUrl = `https://wa.me/?text=${postTitle}%0A${postDescription}%0A${postUrl}%0A${postImg}`;
+        let instagramShareUrl = ``;
+
+
+        facebookBtn.addEventListener("click", function () {
+          window.open(facebookShareUrl, "_blank");
+        });
+
+        linkedinBtn.addEventListener("click", function () {
+          window.open(linkedinShareUrl, "_blank");
+        });
+
+        pinterestBtn.addEventListener("click", function () {
+          window.open(pinterestShareUrl, "_blank");
+        });
+
+        twitterBtn.addEventListener("click", function () {
+          window.open(twitterShareUrl, "_blank");
+        });
+
+        whatsappBtn.addEventListener("click", function () {
+          window.open(whatsappShareUrl, "_blank");
+        });
+
+        instagramBtn.addEventListener("click", function () {
+          window.open(instagramShareUrl, "_blank");
+        });
+      }
+
+      init();
+    });
+  </script>
+</body>
+
+</html>
